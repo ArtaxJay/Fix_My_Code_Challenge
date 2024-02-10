@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-# Fixed and updated by:
-# ArtaxJay Olaoluwa
-# as an ALX SE Project
+# Fixed and updated by: ArtaxJay Olaoluwa
 
 class square():
+    """
+    Creates a class that computes the Swuare of two values.
+    """
 
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """ Declare class variables """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -17,9 +19,11 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """ Perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ Lorem ipsum dolor sit... """
         return "{}/{}".format(self.width, self.height)
 
 
