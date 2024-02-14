@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-# Fixed and updated by:
-# ArtaxJay Olaoluwa
-# as an ALX SE Project
+# Fixed and updated by: ArtaxJay Olaoluwa
 
 class Square:
-    
+    """
+    Creates a class that computes the Swuare of two values.
+    """
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
+        """ Declare class variables """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -25,6 +26,7 @@ class Square:
         Returns a str representation of the square class.
         """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
